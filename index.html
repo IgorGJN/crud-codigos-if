@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#7B57A7">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="main.js" defer></script>
+    <title>Códigos IF</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Códigos das Instituições Financeiras</h1>
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarIF">Cadastrar IF</button>
+        <table class="records">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Código ISPB</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>104</td>
+                    <td>Caixa</td>
+                    <td>32950000</td>
+                    <td>21367764</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Nova Instituição</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form class="modal-form">
+                    <input type="text" class="modal-field" placeholder="Código da IF">
+                    <input type="text" class="modal-field" placeholder="Nome da IF">
+                    <input type="text" class="modal-field" placeholder="Telefone da IF">
+                    <input type="text" class="modal-field" placeholder="ISPB da IF">
+                </form>
+                <footer class="modal-footer">
+                    <button class="button green">Salvar</button>
+                    <button class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Copyright Igor Gabriel Dev - 2022</p>
+    </footer>
+</body>
+</html>
