@@ -1,49 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#7B57A7">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/records.css">
     <link rel="stylesheet" href="css/modal.css">
     <script src="main.js" defer></script>
-    <title>Códigos IF</title>
+    <title>CRUD</title>
 </head>
 <body>
     <header>
-        <h1 class="header-title">Códigos das Instituições Financeiras</h1>
+        <h1 class="header-title">Cadastro de Clientes</h1>
     </header>
     <main>
-        <button type="button" class="button blue mobile" id="cadastrarIF">Cadastrar IF</button>
+        <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
         <table class="records">
             <thead>
                 <tr>
-                    <th>Código</th>
                     <th>Nome</th>
-                    <th>Telefone</th>
-                    <th>Código ISPB</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
                     <th>Ação</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>104</td>
-                    <td>Caixa</td>
-                    <td>32950000</td>
-                    <td>21367764</td>
+                    <td>Maria</td>
+                    <td>maria@gmail.com</td>
+                    <td>(11) 97165-1111</td>
+                    <td>Anapolis</td>
                     <td>
                         <button type="button" class="button green">editar</button>
                         <button type="button" class="button red">excluir</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>001</td>
-                    <td>Banco do Brasil</td>
-                    <td>32950000</td>
-                    <td>21367764</td>
+                    <td>João Pedro</td>
+                    <td>joao@gmail.com</td>
+                    <td>(11) 97165-2222</td>
+                    <td>Jandira</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jose da Silva</td>
+                    <td>jose@gmail.com</td>
+                    <td>(11) 97165-3333</td>
+                    <td>São Roque</td>
                     <td>
                         <button type="button" class="button green">editar</button>
                         <button type="button" class="button red">excluir</button>
@@ -54,14 +65,14 @@
         <div class="modal" id="modal">
             <div class="modal-content">
                 <header class="modal-header">
-                    <h2>Nova Instituição</h2>
+                    <h2>Novo Cliente</h2>
                     <span class="modal-close" id="modalClose">&#10006;</span>
                 </header>
                 <form class="modal-form">
-                    <input type="text" class="modal-field" placeholder="Código da IF">
-                    <input type="text" class="modal-field" placeholder="Nome da IF">
-                    <input type="text" class="modal-field" placeholder="Telefone da IF">
-                    <input type="text" class="modal-field" placeholder="ISPB da IF">
+                    <input type="text" class="modal-field" placeholder="Nome do Cliente">
+                    <input type="email" class="modal-field" placeholder="e-mail do Cliente">
+                    <input type="text" class="modal-field" placeholder="Celular do Cliente">
+                    <input type="text" class="modal-field" placeholder="Cidade do Cliente">
                 </form>
                 <footer class="modal-footer">
                     <button class="button green">Salvar</button>
@@ -71,7 +82,7 @@
         </div>
     </main>
     <footer>
-        <p class="copyright">&copy; Copyright Igor Gabriel Dev - 2022</p>
+        Copyright &copy; Prof. Fernando Leonid
     </footer>
 </body>
 </html>
