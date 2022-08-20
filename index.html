@@ -19,7 +19,7 @@
     </header>
     <main>
         <button type="button" class="button blue mobile" id="cadastrarIF">Cadastrar IF</button>
-        <table class="records">
+        <table id="tabela-cliente" class="records">
             <thead>
                 <tr>
                     <th>Código</th>
@@ -30,7 +30,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <!-- <tr>
                     <td>104</td>
                     <td>Caixa</td>
                     <td>32950000</td>
@@ -69,7 +69,7 @@
                         <button type="button" class="button green">editar</button>
                         <button type="button" class="button red">excluir</button>
                     </td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
         <div class="modal" id="modal">
@@ -78,15 +78,15 @@
                     <h2>Nova Instituição</h2>
                     <span class="modal-close" id="modalClose">&#10006;</span>
                 </header>
-                <form class="modal-form">
-                    <input type="text" class="modal-field" placeholder="Código da IF">
-                    <input type="text" class="modal-field" placeholder="Nome da IF">
-                    <input type="text" class="modal-field" placeholder="Telefone da IF">
-                    <input type="text" class="modal-field" placeholder="ISPB da IF">
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Código da IF" required>
+                    <input type="text" id="email" class="modal-field" placeholder="Nome da IF" required>
+                    <input type="text" id="telefone" class="modal-field" placeholder="Telefone da IF" required>
+                    <input type="text" id="cidade" class="modal-field" placeholder="ISPB da IF" required>
                 </form>
                 <footer class="modal-footer">
-                    <button class="button green">Salvar</button>
-                    <button class="button blue">Cancelar</button>
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
                 </footer>
             </div>
         </div>
